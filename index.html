@@ -145,28 +145,30 @@
                 <div class="experience-container">
                 <div class="experience-card">
                     <h3>Large Language Model for Bundle Generation</h3>
-                    <p>Aug 2023 - Present | Multimedia Computing Laboratory Academic Training Season</p>
-                    <p>Brief description of the role and responsibilities.</p>
+                    <p style="color: #333;">Aug 2023 - Present | Multimedia Computing Laboratory Academic Training Season</p>
+                    <div class="experience-info">
+                    <p class="hidden-info">Developed a deep and comprehensive understanding of foundational deep learning techniques through theoretical study and extensive model reproduction.</p>
+                    <p class="hidden-info">Conducted a comprehensive literature review on state-of-the-art recommender systems, focusing on Bundle Generation methods. Selected and replicated baseline models to ensure a solid foundation for further research.</p>
+                    <p class="hidden-info">Developed a Bundle Generation pipeline that integrates GNN's structural-awareness with LLM-enhanced data embeddings to incorporate open-world knowledge, using noise-based training to improve robustness and reduce the impact of low-quality data. Currently refining the model for enhanced performance.</p>
+                </div>
                 </div>
                 <div class="experience-card">
-                    <h3>Company Name</h3>
-                    <p>Job Title, Duration</p>
-                    <p>Brief description of the role and responsibilities.</p>
+                    <h3>China Enterprise Brand Case Bank</h3>
+                    <p style="color: #333;">2024 | National Key Laboratory of Media Convergence and Communication ; National Institute of Advertising</p>
+                    <div class="experience-info">
+                    <p class="hidden-info">Led front-end and back-end development using Vue.js and Flask.</p>
+                    <p class="hidden-info">Fine-tuned a large model with LoRA methods for its application on brand reputation analysis.</p>
+                    <p class="hidden-info">Conducted preliminary research to develop a brand reputation index using AHP and Entropy Method.</p>
+                    <p class="hidden-info">Collaborated with the National Institute of Advertising, providing technical support for the 2025 China Advertising Great Wall Award.</p>
+                </div>
                 </div>
                 <div class="experience-card">
-                    <h3>Company Name</h3>
-                    <p>Job Title, Duration</p>
-                    <p>Brief description of the role and responsibilities.</p>
+                    <h3>Digital Museum of Chinese Language and Characters</h3>
+                    <p style="color: #333;">2023 | National Key Laboratory of Media Convergence and Communication ; Key Project of the Ministry of Education</p>
+                    <div class="experience-info">
+                    <p class="hidden-info">Contributed to the development of the digital museum platform using Vue.js.</p>
+                    <p class="hidden-info"> Implemented the HLS protocol to encrypt streaming video, generating M3U8 index files for secure content transmission.. Selected and replicated baseline models to ensure a solid foundation for further research.</p>
                 </div>
-                <div class="experience-card">
-                    <h3>Company Name</h3>
-                    <p>Job Title, Duration</p>
-                    <p>Brief description of the role and responsibilities.</p>
-                </div>
-                <div class="experience-card">
-                    <h3>Company Name</h3>
-                    <p>Job Title, Duration</p>
-                    <p>Brief description of the role and responsibilities.</p>
                 </div>
                 </div>
                 <!-- Add more experience cards as needed -->
@@ -241,6 +243,15 @@
             </section>
             <section class="Publication">
                 <h2>Publication</h2>
+                <div class="publication-card">
+                    <h4>Enhancing Copyright Protection Through Blockchain and Ring Signature Algorithm From Lattice</h4>
+                    <div class="publication-head">
+                        <p>Jian Jiang, Yulong Gao, <b>Yile Li</b></p>
+                        <a href="https://github.com/your-username/your-repository" target="_blank" class="github-link" title="View Source">
+                            <i class="fa-solid fa-file-pdf"></i> View online
+                        </a>
+                    </div>
+                </div>
             </section>
             <section class="HaA">
                 <h2>Honors & Awards</h2>
@@ -473,7 +484,7 @@ h2 {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 1);
 }
 
-.experience-card, .project-card ,.education-info{
+.experience-card, .project-card ,.education-info, .publication-card{
     padding: 15px;
     margin-top: 15px;
     border-radius: 12px;
@@ -484,7 +495,7 @@ h2 {
     margin-right: 1%;
 }
 
-.experience-card:hover, .project-card:hover, .education-info:hover{
+.experience-card:hover, .project-card:hover, .education-info:hover, .publication-card:hover{
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -653,7 +664,7 @@ section:nth-child(3) {
     margin-bottom: 20px;
 }
 .experience-container{
-    height: 220px;
+    height: 350px;
 }
 .project-container{
     height: 330px;
@@ -732,6 +743,11 @@ section:nth-child(3) {
     display: block; /* 鼠标悬停时显示额外信息 */
     
 }
+
+.experience-card:hover .hidden-info {
+    display: block; /* 鼠标悬停时显示额外信息 */
+    
+}
 /* 改变链接的默认颜色 */
 .github-link {
     color: #333; /* 你可以选择任何你喜欢的颜色 */
@@ -743,9 +759,13 @@ section:nth-child(3) {
 .github-link:hover {
     color: #e52e71; 
 }
-.p-head {
+.p-head .publication-head{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+}
+
+.experience-info .hidden-info{
+    margin: 2%;
 }
 </style>
